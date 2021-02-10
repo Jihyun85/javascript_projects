@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  width: 100%;
+  height: 100vh;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 400px;
+  width: 70%;
+  min-height: 350px;
+  height: auto;
+  background-color: rgb(228, 224, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.container h3 {
+  font-size: 24px;
+}
+
+.message-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.message-form #input-text {
+  margin-bottom: 30px;
+  height: 40px;
+  width: 90%;
+}
+
+.message-form #input-submit {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: lightcoral;
+  color: white;
+  cursor: pointer;
+}
+
+.info-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgba(240, 128, 128, 0.315);
+  margin: 10px 0 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.delivered-message {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: lightcoral;
+  font-weight: 600;
+}
