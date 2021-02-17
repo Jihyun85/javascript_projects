@@ -1,0 +1,30 @@
+.our-store__product {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+.our-store__pic {
+  width: 100%;
+  height: 250px;
+}
+
+.our-store__pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-store__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.our-store__product-title,
+.our-store__product-price {
+  font-size: 18px;
+}

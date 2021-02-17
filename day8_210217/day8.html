@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/day8.css" />
+    <title>Day8 - Filter Project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <img src="img/logo.svg" class="header__logo" />
+        <ul class="header__list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Store</a>
+          </li>
+        </ul>
+        <div class="header__info">
+          <div class="header__phone">
+            <i class="fas fa-phone"></i>
+            <p>+ 123 456 789</p>
+          </div>
+          <div class="header__cart btn--cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p>2 Items - $10.49</p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__banner">
+        <div class="header__banner-content">
+          <p class="header__banner-description">
+            Welcome to <span>Grandma's</span>
+          </p>
+          <a href="#" class="btn btn--lg">explore</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-us">
+        <div class="about-us__container">
+          <div class="about-us__text">
+            <h2 class="about-us__title">About <span>Us</span></h2>
+            <p class="about-us__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel
+              blanditiis dolorem ducimus non iusto porro, laudantium obcaecati
+              quos harum provident! Sequi, soluta. Officiis quasi nisi
+              perferendis accusamus eaque id.
+            </p>
+            <a href="#" class="btn">explore</a>
+          </div>
+          <div class="about-us__pic">
+            <img src="img/sweets-1.jpeg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="our-store">
+        <h2 class="our-store__title">Our <span>Store</span></h2>
+        <ul class="our-store__filter">
+          <li class="btn jsBtn" data-item="all">all</li>
+          <li class="btn jsBtn" data-item="cake">cakes</li>
+          <li class="btn jsBtn" data-item="cupcake">cupcakes</li>
+          <li class="btn jsBtn" data-item="sweets">sweets</li>
+          <li class="btn jsBtn" data-item="doughnut">doughnuts</li>
+        </ul>
+        <div class="our-store__search">
+          <div class="our-store__search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <input type="text" placeholder="item...." class="jsInput" />
+        </div>
+
+        <div class="our-store__grid-container jsProductGrid">
+          <div class="our-store__product jsProduct" data-item="sweets">
+            <div class="our-store__pic">
+              <img src="img/sweets-1.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Sweet Item</h5>
+              <span class="our-store__product-price">$ 5</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="cupcake">
+            <div class="our-store__pic">
+              <img src="img/cupcake-2.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Cupcake Item</h5>
+              <span class="our-store__product-price">$ 20</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="sweets">
+            <div class="our-store__pic">
+              <img src="img/sweets-2.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Sweet Item</h5>
+              <span class="our-store__product-price">$ 10</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="cake">
+            <div class="our-store__pic">
+              <img src="img/cake-3.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Cake Item</h5>
+              <span class="our-store__product-price">$ 10</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="sweets">
+            <div class="our-store__pic">
+              <img src="img/sweets-3.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Sweet Item</h5>
+              <span class="our-store__product-price">$ 15</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="doughnut">
+            <div class="our-store__pic">
+              <img src="img/doughnut-2.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Doughnut Item</h5>
+              <span class="our-store__product-price">$ 10</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="cake">
+            <div class="our-store__pic">
+              <img src="img/cake-2.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Cake Item</h5>
+              <span class="our-store__product-price">$ 5</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="doughnut">
+            <div class="our-store__pic">
+              <img src="img/doughnut-1.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Doughnut Item</h5>
+              <span class="our-store__product-price">$ 20</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="cupcake">
+            <div class="our-store__pic">
+              <img src="img/cupcake-3.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Cupcake Item</h5>
+              <span class="our-store__product-price">$ 5</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="doughnut">
+            <div class="our-store__pic">
+              <img src="img/doughnut-3.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Doughnut Item</h5>
+              <span class="our-store__product-price">$ 10</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="cake">
+            <div class="our-store__pic">
+              <img src="img/cake-1.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Cake Item</h5>
+              <span class="our-store__product-price">$ 15</span>
+            </div>
+          </div>
+
+          <div class="our-store__product jsProduct" data-item="cupcake">
+            <div class="our-store__pic">
+              <img src="img/cupcake-1.jpeg" />
+            </div>
+            <div class="our-store__info">
+              <h5 class="our-store__product-title">Cupcake Item</h5>
+              <span class="our-store__product-price">$ 15</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/day8.js"></script>
+  </body>
+</html>
