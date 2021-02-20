@@ -35,7 +35,6 @@ const btns = document.querySelectorAll(".jsBtn");
 const input = document.querySelector(".jsInput");
 
 const handleBtnClick = (e) => {
-  e.preventDefault();
   const dataset = e.target.dataset.item;
   products.forEach((product) => {
     const productDataset = product.dataset.item;
