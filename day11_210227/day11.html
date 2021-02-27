@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="day11.css" />
+    <title>Day11 - Tip Form Project</title>
+  </head>
+  <body>
+    <section class="calculator">
+      <h1 class="calculator__title">tip calculator</h1>
+      <div class="calculator__info">
+        <p class="hidden jsPriceInfo">Bill Amount Cannot Be Blank</p>
+        <p class="hidden jsPeopleInfo">
+          Number Of Users Must Be Greater Than Zero
+        </p>
+        <p class="hidden jsEachOwesInfo">You Must Select A Service</p>
+      </div>
+      <form class="calculator__form jsCalculatorForm">
+        <div class="calculator__rows">
+          <h5>How Much Was Your Bill?</h5>
+          <div class="calculator__input-group">
+            <span><i class="fas fa-dollar-sign"></i></span>
+            <input type="number" min="0" class="jsPrice" />
+          </div>
+        </div>
+        <div class="calculator__rows">
+          <h5>How Many People Sharing The Bill?</h5>
+          <div class="calculator__input-group">
+            <span><i class="fas fa-male"></i></span>
+            <input type="number" min="0" class="jsPeople" />
+          </div>
+        </div>
+        <div class="calculator__rows">
+          <h5>How was Your Service?</h5>
+          <select class="jsSelect">
+            <option value="">Choose...</option>
+            <option value="0.2">Great - 20%</option>
+            <option value="0.1">Good - 10%</option>
+            <option value="0.02">Bad - 2%</option>
+          </select>
+        </div>
+        <input type="submit" class="calculator__submit" value="Calculate" />
+      </form>
+      <div class="calculator__result hidden jsResult">
+        <p class="calculator__tip-text jsTipText"></p>
+        <p class="calculator__total-text jsTotalText"></p>
+        <p class="calcultaor__each-person jsEachPerson"></p>
+      </div>
+    </section>
+    <script src="day11.js"></script>
+  </body>
+</html>
