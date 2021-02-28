@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="day12.css" />
+    <title>Day12 - Todo List Project</title>
+  </head>
+  <body>
+    <section class="todo">
+      <p class="todo__info hidden jsTodoInfo">내용을 작성해주세요!</p>
+      <h1 class="todo__title">To Do List</h1>
+      <form class="todo__form jsTodoForm">
+        <input class="todo__input jsTodoInput" type="text" />
+        <input class="todo__submit jsSubmitBtn" type="submit" value="Submit" />
+      </form>
+      <ul class="todo__list jsTodoList"></ul>
+      <button class="todo__reset jsTodoReset">Reset</button>
+    </section>
+    <script src="day12.js"></script>
+  </body>
+</html>

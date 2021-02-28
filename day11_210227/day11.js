@@ -47,7 +47,7 @@ const handleSubmit = (e) => {
     setTimeout(function () {
       priceInput.value = "";
       peopleInput.value = "";
-      selectForm.value = "choose";
+      selectForm.value = "";
       result.classList.add("hidden");
     }, 10000);
   } else {
