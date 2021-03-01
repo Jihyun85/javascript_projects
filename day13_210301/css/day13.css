@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+/* variables */
+@import "variables.css";
+
+/* components */
+@import "components/button.css";
+@import "components/content-card.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  list-style: none;
+}
+
+.header__list li {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.header__list li a {
+  color: var(--pink);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.header__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 500px;
+}
+
+.header__phone,
+.header__cart {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.header__cart {
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.header__phone i,
+.header__cart i {
+  margin-right: 5px;
+}
+
+.header__banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #f4d890;
+}
+
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.534);
+  z-index: 10;
+}
+
+.cart__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+}
+
+.cart__list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cart__list-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cart__info {
+  margin-right: 20px;
+}
+
+.cart__info h6 {
+  font-size: 16px;
+}
+
+.cart__delete {
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.cart__delete:hover {
+  color: var(--pink);
+}
+
+.cart__price-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.cart__btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.header__banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/headerBcg.jpeg");
+  background-size: cover;
+  filter: grayscale(30%);
+  opacity: 0.5;
+}
+
+.header__banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header__banner-description {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 50px;
+}
+
+.header__banner-description span {
+  color: var(--pink);
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 450px;
+  background-color: white;
+}
+
+.about-us__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 100px;
+}
+
+.about-us__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+}
+
+.about-us__title {
+  font-size: 36px;
+}
+
+.about-us__title span {
+  color: var(--pink);
+  font-size: 45px;
+}
+
+.about-us__description {
+  margin: 20px 0;
+  padding-right: 120px;
+}
+
+.about-us__pic {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.about-us__pic img {
+  height: 100%;
+}
+
+.our-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: #e5e5e5;
+}
+
+.our-store__title {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.our-store__title span {
+  color: var(--pink);
+  font-size: 60px;
+}
+
+.our-store__filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-store__filter .btn {
+  margin: 10px;
+}
+
+.our-store__search {
+  display: flex;
+  margin: 10px 0;
+}
+
+.our-store__search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--pink);
+}
+
+.our-store__search input {
+  width: 400px;
+  padding: 0 10px;
+  border: none;
+  font-size: 16px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.our-store__search input:focus {
+  outline: 5px solid #a8dadcaf;
+}
+
+.our-store__search input::placeholder {
+  font-size: 16px;
+}
+
+.our-store__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-auto-rows: 350px;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.displayNone {
+  display: none;
+}
