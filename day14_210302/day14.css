@@ -1,0 +1,168 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+/* variables */
+:root {
+  --rose: #e66767;
+  --light-rose: #f6cbcb;
+  --green: #2ed573;
+  --grey: #dfe4ea;
+  --default-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  --default-font: "Ubuntu", sans-serif;
+}
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey);
+  font-family: var(--default-font);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: unset;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: unset;
+}
+
+/* Object */
+
+.o-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.o-grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--default-box-shadow);
+}
+
+.o-grid__rose {
+  background-color: var(--rose);
+}
+
+.o-grid__light-rose {
+  background-color: var(--light-rose);
+}
+
+/* Component */
+.c-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.521);
+  padding: 2px 10px;
+  border-radius: 1rem;
+}
+
+.c-info--complete {
+  color: var(--green);
+}
+
+.c-info--error {
+  color: red;
+}
+
+.c-title {
+  margin: 1rem;
+  font-size: 24px;
+}
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.c-form__input {
+  width: 80%;
+  padding: 0 10px;
+  border-bottom: 3px solid;
+  border-color: var(--light-rose);
+  font-size: 20px;
+}
+
+.c-btn {
+  width: 70%;
+  padding: 2px 0;
+  margin: 0.5rem;
+  border: 3px solid;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.c-btn--light-rose {
+  color: var(--light-rose);
+  border-color: var(--light-rose);
+}
+
+.c-btn--rose {
+  border-color: var(--rose);
+}
+
+.c-btn--hover {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.c-btn--hover:hover {
+  color: black;
+  background-color: var(--light-rose);
+}
+
+.c-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0.5rem;
+}
+
+.c-list__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.c-list__row span {
+  cursor: pointer;
+}
+
+.p-icon {
+  transition: color 0.5s ease-in-out;
+}
+
+.p-icon:hover {
+  color: var(--rose);
+}
+
+.s-hidden {
+  display: none;
+}

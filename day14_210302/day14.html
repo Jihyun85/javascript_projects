@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="day14.css" />
+    <title>Day14 - Grocery List Project</title>
+  </head>
+  <body>
+    <div class="o-grid">
+      <div class="o-grid__item o-grid__rose">
+        <p class="c-info js-add-info s-hidden"></p>
+        <h3 class="c-title">Add Grocery Items</h3>
+        <form class="c-form js-form">
+          <input type="text" class="c-form__input js-input" />
+          <input
+            type="submit"
+            class="c-btn c-btn--light-rose c-btn--hover"
+            value="Submit Here"
+          />
+        </form>
+      </div>
+      <div class="o-grid__item o-grid__light-rose">
+        <p class="c-info js-list-info s-hidden"></p>
+        <h3 class="c-title">Grocery Items</h3>
+        <ul class="c-list js-items-list"></ul>
+        <button class="c-btn c-btn--rose js-clear-btn">Clear Items</button>
+      </div>
+    </div>
+    <script src="day14.js"></script>
+  </body>
+</html>
