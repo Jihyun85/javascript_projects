@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="day15.css" />
+    <title>Day15 - OOP Course Form Project</title>
+  </head>
+  <body>
+    <div class="o-main">
+      <h1 class="c-title">Get A Free Course</h1>
+      <p class="o-main__info">Calculating.....</p>
+      <form class="c-form js-form">
+        <div class="c-form__row">
+          <i class="fas fa-user-alt"></i>
+          <input
+            type="text"
+            placeholder="Customer Name"
+            class="c-form__input js-input js-input-customer"
+          />
+        </div>
+        <div class="c-form__row">
+          <i class="fas fa-book"></i>
+          <input
+            type="text"
+            placeholder="Course"
+            class="c-form__input js-input js-input-course"
+          />
+        </div>
+        <div class="c-form__row">
+          <i class="fas fa-user-circle"></i>
+          <input
+            type="text"
+            placeholder="Author"
+            class="c-form__input js-input js-input-author"
+          />
+        </div>
+        <button class="c-btn c-btn--disable js-submit-btn">Submit</button>
+      </form>
+      <div class="o-grid">
+        <div class="o-grid__item c-course-card">
+          <div class="c-course-card__img c-course-card__img--default"></div>
+          <div class="c-course-card__info">
+            <p class="c-course-card__row">
+              <span class="c-subtitle c-subtitle--yellow">Name : </span>John
+              Anderson
+            </p>
+            <p class="c-course-card__row">
+              <span class="c-subtitle c-subtitle--green">Course : </span>Css
+              Basics
+            </p>
+            <p class="c-course-card__row">
+              <span class="c-subtitle c-subtitle--red">Author : </span>John
+              Anderson
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="day15.js"></script>
+  </body>
+</html>
