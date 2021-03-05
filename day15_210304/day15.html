@@ -16,7 +16,7 @@
   <body>
     <div class="o-main">
       <h1 class="c-title">Get A Free Course</h1>
-      <p class="o-main__info">Calculating.....</p>
+      <p class="o-main__info s-hidden js-info">Calculating.....</p>
       <form class="c-form js-form">
         <div class="c-form__row">
           <i class="fas fa-user-alt"></i>
@@ -44,8 +44,11 @@
         </div>
         <button class="c-btn c-btn--disable js-submit-btn">Submit</button>
       </form>
-      <div class="o-grid">
-        <div class="o-grid__item c-course-card">
+      <div class="c-loading s-hidden js-loading">
+        <i class="fas fa-redo fa-6x"></i>
+      </div>
+      <div class="o-grid js-grid">
+        <div class="c-course-card">
           <div class="c-course-card__img c-course-card__img--default"></div>
           <div class="c-course-card__info">
             <p class="c-course-card__row">

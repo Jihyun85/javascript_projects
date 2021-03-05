@@ -41,6 +41,16 @@ input {
   margin: 2rem auto;
 }
 
+.o-main__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #20bf6a6e;
+  font-weight: 600;
+}
+
 .o-grid {
   display: grid;
   grid-template-columns: repeat(3, 300px);
@@ -68,11 +78,16 @@ input {
 }
 
 /* component */
+.c-title {
+  margin-bottom: 1rem;
+}
+
 .c-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin: 1rem 0;
 }
 
 .c-form__row {
@@ -126,6 +141,21 @@ input {
 
 .c-btn--disable {
   opacity: 0.5;
+}
+
+.c-loading {
+  margin: 2rem 0;
+  color: var(--main-color);
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 .c-course-card {
@@ -186,4 +216,9 @@ input {
 
 .c-subtitle--red {
   background-color: var(--red);
+}
+
+/* scope */
+.s-hidden {
+  display: none;
 }
