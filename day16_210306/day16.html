@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="day16.css" />
+    <title>Day16 - Flashcard Project</title>
+  </head>
+  <body>
+    <div class="o-main">
+      <h1 class="c-title">Flashcards</h1>
+      <button class="c-btn c-btn--red c-btn--border-thin js-show-form">
+        Add Question
+      </button>
+      <div>
+        <form class="c-form s-hidden js-form">
+          <span class="c-form__close-btn js-close-btn">
+            <i class="fas fa-window-close fa-3x"></i>
+          </span>
+          <p class="c-form__info s-hidden js-form-info">
+            Cannot Add Empty Values
+          </p>
+          <h4 class="c-form__subtitle">Question</h4>
+          <textarea class="c-form__textarea js-question-input"></textarea>
+          <h4 class="c-form__subtitle">Answer</h4>
+          <textarea class="c-form__textarea js-answer-input"></textarea>
+          <input
+            type="submit"
+            value="Save"
+            class="c-btn c-btn--blue c-btn--long js-save-btn"
+          />
+        </form>
+      </div>
+      <div class="o-grid js-grid">
+        
+    </div>
+    <script src="day16.js"></script>
+  </body>
+</html>

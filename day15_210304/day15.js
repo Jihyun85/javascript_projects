@@ -25,7 +25,6 @@ class Card {
     const authorTitle = document.createElement("span");
     const authorValue = document.createElement("span");
     const index = num % 9;
-    console.log(index);
     card.classList.add("c-course-card");
     img.classList.add("c-course-card__img");
     info.classList.add("c-course-card__info");
@@ -77,7 +76,6 @@ const handleFocus = (input) => {
       return input.value !== "";
     }
     let checkResult = inputsAry.every(checkInput);
-    console.log(checkResult);
     if (checkResult) {
       submitBtn.disabled = false;
       submitBtn.classList.remove("c-btn--disable");
@@ -118,7 +116,6 @@ const handleSubmit = (e) => {
     submitBtn.disabled = true;
     submitBtn.classList.add("c-btn--disable");
   }, 3000);
-  console.log(newCard);
 };
 
 const init = () => {
