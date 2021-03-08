@@ -1,0 +1,58 @@
+/* budget */
+.p-budget {
+  display: flex;
+  justify-content: space-around;
+}
+
+.p-budget__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 18rem;
+  padding: 2rem 0;
+}
+
+.p-budget__title {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+.p-budget__column > i {
+  color: var(--blue);
+}
+
+.p-budget__dollars {
+  font-size: 2.4rem;
+}
+
+/* result */
+.p-result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.p-result__row {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.p-result__row--title {
+  margin-bottom: 1rem;
+}
+
+.p-result__list-item {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+  font-size: 2rem;
+}
+
+.p-result__icons > button {
+  background-color: transparent;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}

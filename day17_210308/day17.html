@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/day17.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <title>Day17 - Budget App Project</title>
+  </head>
+  <body>
+    <main class="o-main">
+      <h1 class="c-title">budget app</h1>
+      <div class="o-main--row">
+        <section>
+          <div class="c-info js-budget-info s-hidden">
+            Value Cannot Be Empty Or Negative
+          </div>
+          <form class="c-form c-form--green js-budget-form">
+            <p class="c-form__description">Please Enter Your Budget</p>
+            <input
+              type="number"
+              class="c-form__input c-form__input--green js-input-budget"
+            />
+            <input
+              type="submit"
+              class="c-btn c-btn--green js-budget-btn"
+              value="Calculate"
+            />
+          </form>
+        </section>
+
+        <section class="p-budget">
+          <div class="p-budget__column">
+            <h6 class="p-budget__title">budget</h6>
+            <i class="fas fa-money-bill-alt fa-4x"></i>
+            <p class="p-budget__dollars c-text--green js-budget">$ 0</p>
+          </div>
+          <div class="p-budget__column">
+            <h6 class="p-budget__title">expenses</h6>
+            <i class="far fa-credit-card fa-4x"></i>
+            <p class="p-budget__dollars c-text--red js-expense">$ 0</p>
+          </div>
+          <div class="p-budget__column">
+            <h6 class="p-budget__title">balance</h6>
+            <i class="fas fa-dollar-sign fa-4x"></i>
+            <p class="p-budget__dollars c-text--green js-balance">$ 0</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="o-main--row">
+        <section>
+          <div class="c-info js-expense-info s-hidden">
+            Values Cannot Be Empty Or Negative
+          </div>
+          <form class="c-form c-form--red js-expense-form">
+            <p class="c-form__description">Please Enter Your Expense</p>
+            <input
+              type="text"
+              class="c-form__input c-form__input--red js-input-expense"
+            />
+            <p class="c-form__description">Please Enter Expense Amount</p>
+            <input
+              type="number"
+              class="c-form__input c-form__input--red js-input-expense-value"
+            />
+            <input type="submit" class="c-btn c-btn--red" value="Add Expense" />
+          </form>
+        </section>
+
+        <section class="p-result">
+          <div class="p-result__row p-result__row--title">
+            <h5 class="p-result__list-item">Expense Title</h5>
+            <h5 class="p-result__list-item">Expense Value</h5>
+            <h5></h5>
+          </div>
+          <ul class="p-result__list js-list"></ul>
+        </section>
+      </div>
+    </main>
+    <script src="day17.js"></script>
+  </body>
+</html>
