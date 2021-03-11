@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+:root {
+  --font: "DotGothic16", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f7f3eb;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.main {
+  max-width: 600px;
+  margin: 5rem auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joke-box {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--font);
+}
+
+.btn:focus {
+  outline: 2px solid grey;
+}
+
+.btn:active {
+  transform: translateY(0.1rem);
+}
